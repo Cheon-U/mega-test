@@ -1,0 +1,178 @@
+/* 메가커피 메인색상, 글자색상, 글자 기본크기 */
+:root{
+    --main-color:#fdd000;
+    --main-text-color:#1c1c1b;
+}
+
+.inner{
+    max-width:1280px;
+    margin:0 auto;
+    /* background:lightblue */
+}
+
+
+/* hdeadr */
+header{
+    background:#fff;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+header .inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    width:200px;
+    /* padding:25px 0 30px; */
+}
+
+.logo img{
+    width:100%;
+}
+
+/* depth 서브메뉴 숨기기 */
+.depth1{
+    display:none;
+    position:absolute;
+    line-height:2;
+    padding:20px 0;
+    /* background:rgba(0,255,0,0.1); */
+    width:100%;
+    height:200px;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+.main-menu{
+    display:flex;
+}
+
+.main-menu>li:hover{
+    background:var(--main-color);
+}
+
+.main-menu>li:hover .depth1{
+    background: var(--main-color);
+}
+
+.main-menu>li{
+    position:relative;
+}
+
+.main-menu>li>a{
+    display:block;
+    text-align:center;
+    line-height: 100px;
+    width:115px;
+    font-size:18px;
+    font-weight:500;
+}
+
+.sns-list{
+    display:flex;
+    gap:10px;
+}
+
+.sns-list>li{}
+.sns-list>li>a{
+    /* 이미지를 위아래,좌우 가운데 보내기 */
+    display:flex;
+    /* 좌우 */
+    justify-content:center;
+    /* 위아래 */
+    align-items:center;
+    width:39px;
+    height:39px;
+    border:2px solid var(--main-text-color);
+    border-radius:50%;
+    background: #fff;
+}
+
+.sns-list>li>a:hover{
+    background:var(--main-color);
+    border-color:transparent;
+}
+.main-menu:hover .depth1{
+    display:block;
+}
+/* main */
+main{
+    height:500px;
+}
+
+/* footer */
+footer{}
+
+.footer-top{
+    background:var(--main-color);
+    padding:20px 0;
+}
+
+.util-menu{
+    display:flex;
+    gap:20px;
+}
+
+.util-menu>li>a{
+    font-weight:600;
+}
+
+.util-menu>li>a:hover{
+    text-decoration:underline;
+}
+
+
+.footer-bottom{
+    background:var(--main-text-color);
+    padding:60px 0;
+    color:#aaa;
+}
+
+.footer-bottom .inner{
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-bottom>.inner>.footer-bottom-left>div{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.footer-bottom>.inner>.footer-bottom-left>div>img{
+    width:200px;
+}
+
+.footer-bottom-left address{
+    margin-top:20px;
+    line-height:2;
+    font-size:14px;
+}
+
+.footer-bottom-left address span{
+    margin-right: 10px;
+}
+
+.footer-bottom-left address strong{
+    color:#fff;
+}
+
+.site-map{
+    display:flex;
+    gap:50px;
+}
+
+.site-map>li>a{
+    font-weight:600;
+    font-size:14px;
+    color:white;
+}
+
+.site-map .depth1{
+    display:block;
+    position:static;
+    font-size:14px;
+    text-align:left;
+}
